@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luyao-wang.github.io/"/>
-  <updated>2017-08-24T01:22:28.000Z</updated>
+  <updated>2017-08-24T06:05:38.000Z</updated>
   <id>https://luyao-wang.github.io/</id>
   
   <author>
@@ -16,51 +16,266 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CS6580 Final Presentation - Miniature BitTorrent Client 💻</title>
-    <link href="https://luyao-wang.github.io/2017/08/23/bt-demo/"/>
-    <id>https://luyao-wang.github.io/2017/08/23/bt-demo/</id>
-    <published>2017-08-23T22:05:54.000Z</published>
-    <updated>2017-08-24T01:22:28.000Z</updated>
+    <title>Hadoop - Big Data&#39;s Best Friend</title>
+    <link href="https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/"/>
+    <id>https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/</id>
+    <published>2017-08-24T05:43:58.000Z</published>
+    <updated>2017-08-24T06:05:38.000Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">     ___           ___           ___           ___</div><div class="line">    /\  \         /\  \         /\__\         /\  \</div><div class="line">   /::\  \       /::\  \       /::|  |       /::\  \</div><div class="line">  /:/\:\  \     /:/\:\  \     /:|:|  |      /:/\:\  \</div><div class="line"> /:/  \:\__\   /::\~\:\  \   /:/|:|__|__   /:/  \:\  \</div><div class="line">/:/__/ \:|__| /:/\:\ \:\__\ /:/ |::::\__\ /:/__/ \:\__\</div><div class="line">\:\  \ /:/  / \:\~\:\ \/__/ \/__/~~/:/  / \:\  \ /:/  /</div><div class="line"> \:\  /:/  /   \:\ \:\__\         /:/  /   \:\  /:/  /</div><div class="line">  \:\/:/  /     \:\ \/__/        /:/  /     \:\/:/  /</div><div class="line">   \::/__/       \:\__\         /:/  /       \::/  /</div><div class="line">    ~~            \/__/         \/__/         \/__/</div></pre></td></tr></table></figure>
-<h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><p>node <code>v8.4.0</code></p>
-<p>npm <code>5.3.0</code></p>
-<h3 id="Dependencies"><a href="#Dependencies" class="headerlink" title="Dependencies"></a>Dependencies</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&quot;dependencies&quot;: &#123;</div><div class="line">    [&quot;bencode&quot;](https://www.npmjs.com/package/bencode.js): &quot;^0.10.0&quot;,</div><div class="line">    [&quot;parse-torrent&quot;](https://www.npmjs.com/package/parse-torrent): &quot;^5.8.1&quot;,</div><div class="line">    &quot;reinstall&quot;: &quot;^2.0.0&quot;,</div><div class="line">    &quot;request&quot;: &quot;^2.79.0&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ cd bt-demo</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ npm ls</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ cd src</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../test_torrents/1.torrent</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../test_torrents/2.torrent</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../test_torrents/s.torrent</div></pre></td></tr></table></figure>
-<h3 id="Sample-Run"><a href="#Sample-Run" class="headerlink" title="Sample Run"></a>Sample Run</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">Luyaos-MacBook-Pro:bt-demo luyaowang$ node torrent.js ./../testTorrents/1.torrent</div><div class="line">134.154.70.45:6687 Messages: Error: connect ECONNREFUSED 134.154.70.45:6687,Closed</div><div class="line"></div><div class="line"></div><div class="line">172.78.20.37:50563 Messages: Connected,handshake sent ,handshake complete ,Sent interested ,Bitfield</div><div class="line">received ,Have(4),Have(11),Have(2),Have(6),Have(12),Have(9),Have(8),Have(5),Have(7),Have(10),Have(1)</div><div class="line">,Have(0),Have(3),Un-Choke received ,Sent request for 4 ,Received all blocks for piece 4,valid</div><div class="line">piece,Sent request for 11 ,Received all blocks for piece 11,valid piece,Sent request for 2 ,Received</div><div class="line">all blocks for piece 2,valid piece,Sent request for 6 ,Received all blocks for piece 6,valid piece,Sent</div><div class="line">request for 12 ,Received all blocks for piece 12,valid piece,Sent request for 9 ,Received all blocks</div><div class="line">for piece 9,valid piece,Sent request for 8 ,Received all blocks for piece 8,valid piece,Sent request</div><div class="line">for 5 ,Received all blocks for piece 5,valid piece,Sent request for 7 ,Received all blocks for piece</div><div class="line">7,valid piece,Sent request for 10 ,Received all blocks for piece 10,valid piece,Sent request for 1</div><div class="line">,Received all blocks for piece 1,valid piece,Sent request for 0 ,Received all blocks for piece 0,valid</div><div class="line">piece,Sent request for 3 ,Received all blocks for piece 3,valid piece,No more pieces to request</div><div class="line"></div><div class="line"></div><div class="line">100% done</div><div class="line">Done:13</div><div class="line">Remianing:0</div><div class="line">Download Complete!</div><div class="line">File will be saved at : ./../Downloads/</div></pre></td></tr></table></figure>
-<h3 id="Useful-Links"><a href="#Useful-Links" class="headerlink" title="Useful Links"></a>Useful Links</h3><ul>
-<li><p><a href="https://nodejs.org/api/fs.html" target="_blank" rel="external">Node.js v8.4.0 Documentation</a></p>
+    <content type="html"><![CDATA[<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png" alt=""></p>
+<h3 id="What-is-Hadoop"><a href="#What-is-Hadoop" class="headerlink" title="What is Hadoop?"></a>What is Hadoop?</h3><p>Hadoop is a framework of MapReduce utilized for handling “Big Data” operations and storage.</p>
+<ul>
+<li>MapReduce is a programming model utilized for handling database clusters (separate computers that work in unison with one another for a central task)</li>
+</ul>
+<p>Hadoop is broken up into four main components:</p>
+<ul>
+<li><p>Hadoop Common (standard library for Hadoop)</p>
 </li>
-<li><p><a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a></p>
+<li><p>HDFS (Hadoop Distributed File System)</p>
 </li>
-<li><p><a href="https://archive.org/" target="_blank" rel="external">Internet Archive</a></p>
+<li><p>MapReduce Engine (JobTracker &amp; TaskTracker)</p>
 </li>
-<li><p><a href="https://wiki.vuze.com/w/Legal_torrent_sites" target="_blank" rel="external">Vuze</a></p>
-</li>
-<li><p><a href="http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo" target="_blank" rel="external">patorjk</a></p>
+<li><p>YARN (Yet Another Resource Negotiator)</p>
 </li>
 </ul>
-<h3 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h3><p>Credits to <a href="https://github.com/vaibhav-walia" target="_blank" rel="external">vaibhav-walia@github</a>, <a href="https://github.com/webtorrent/create-torrent" target="_blank" rel="external">WebTorrent, LLC.: create-torrent</a>, <a href="https://github.com/webtorrent/webtorrent-cli" target="_blank" rel="external">WebTorrent, LLC.: webtorrent-cli</a>, <a href="https://github.com/webtorrent/bittorrent-protocol" target="_blank" rel="external">WebTorrent, LLC.: bittorrent-protocol</a></p>
+<h3 id="Hadoop-Common"><a href="#Hadoop-Common" class="headerlink" title="Hadoop Common"></a>Hadoop Common</h3><p>Hadoop Common is the standard library for Hadoop.</p>
+<p>Previously titled “Hadoop Core”, the name was changed to “Hadoop Common” in July 2009.</p>
+<ul>
+<li>The name was changed because it’s the list of common libraries and utilities used by Hadoop. Not the most exciting reasons for the name change.</li>
+</ul>
+<p>Hadoop Common also includes the necessary Java Archive (.jar) files that Hadoop needs to work with the Java Virtual Machine.</p>
+<p>Hadoop Common also includes several codecs utilized for compression (e.g. bzip2).</p>
+<p>For a full overview of Hadoop Common, see <a href="https://github.com/apache/hadoop-common" target="_blank" rel="external">this mirror</a> from Github: <a href="https://github.com/apache/hadoop-common" target="_blank" rel="external">https://github.com/apache/hadoop-common</a></p>
+<h3 id="Hadoop’s-Distributed-File-System-HDFS"><a href="#Hadoop’s-Distributed-File-System-HDFS" class="headerlink" title="Hadoop’s Distributed File System (HDFS)"></a>Hadoop’s Distributed File System (HDFS)</h3><p><img src="https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png" alt=""></p>
+<p>NameNode is a special server for storing metadata on files.</p>
+<p>Files themselves stored in DataNode.</p>
+<p>NameNode also contains maps to direct metadata from each file to an appropriate data block in the DataNode servers.</p>
+<p>Each cluster in Hadoop has its own NameNode with the current build of Hadoop.</p>
+<p>Secondary NameNode acts as a helper to create checkpoints (keeps track of what data has been read, modified, etc) for NameNode. It is NOT a backup.</p>
+<p>However Secondary NameNode is used for protection from corruption in the event that [first] NameNode is ever dropped. Actual backups must be handled by the database administrator(s) themselves instead of being built into Hadoop.</p>
+<h3 id="MapReduce-Engine-JobTracker-amp-TaskTracker"><a href="#MapReduce-Engine-JobTracker-amp-TaskTracker" class="headerlink" title="MapReduce Engine - JobTracker &amp; TaskTracker"></a>MapReduce Engine - JobTracker &amp; TaskTracker</h3><p><strong>JobTracker (JT)</strong></p>
+<p>JT takes in tasks from client, then delegates information out to a corresponding TaskTracker service workers.</p>
+<p>JT also monitors status of jobs from corresponding TT service workers, then transmits status to the client.</p>
+<p>If the JT of a NameNode goes down, HDFS will still be able to work but MapReduce executions will be stopped and halted. No further MapReduce executions will be able to be sent to JobTracker to delegate to TaskTracker service workers.</p>
+<p><strong>TaskTracker (TT)</strong></p>
+<p>Built to handle Mapper and Reducer jobs delegated by the JobTracker that summoned it.</p>
+<ul>
+<li><p>Maps are just key-value pairs of transformed data. E.g. [1,2,3,4] mapped with * 2 = [2,4,6,8];</p>
+</li>
+<li><p>Reducers are transformations of records with similar keys down into a smaller set.</p>
+</li>
+</ul>
+<p>TaskTrackers are slaves to their summoning JT. In the event a TT goes down, JT will simply reassign the task to a new TaskTracker.</p>
+<h3 id="TaskTracker-Overview-of-MapReduce-call-chain"><a href="#TaskTracker-Overview-of-MapReduce-call-chain" class="headerlink" title="TaskTracker Overview of MapReduce call chain"></a>TaskTracker Overview of MapReduce call chain</h3><p><img src="https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg" alt=""></p>
+<p>The example above is a diagram of how a word count program in Hadoop which map words in a file together (finding all instances of the word) and then reduces the amount of found words into a single value (the actual number of times the word appears in the file).</p>
+<p>Found at: <a href="https://examples.javacodegeeks.com/enterprise-java/apache-hadoop/hadoop-hello-world-example/" target="_blank" rel="external">https://examples.javacodegeeks.com/enterprise-java/apache-hadoop/hadoop-hello-world-example/</a></p>
+<h3 id="YARN-Yet-Another-Resource-Negotiator"><a href="#YARN-Yet-Another-Resource-Negotiator" class="headerlink" title="YARN (Yet Another Resource Negotiator)"></a>YARN (Yet Another Resource Negotiator)</h3><p>Used to decouple resource management from actual MapReduce jobs.</p>
+<p>YARN works by using a central Resource Manager that contacts individual “Node Managers” that exist on each separate machine in the cluster (the “nodes” of the cluster).</p>
+<ul>
+<li><p>Node Managers manages containers on each node.</p>
+</li>
+<li><p>Application Master (App Mstr) is used to communicate information about resources between the Resource Manager and individual Node Managers.</p>
+</li>
+</ul>
+<p>The Resource Manager also utilizes a Scheduler to schedule requests with individual Node Managers through the App Master.</p>
+<ul>
+<li><p>Note that the Scheduler does not deal with fault tolerance. It merely keeps track of resources. Fault tolerance is instead handled via the individual Node Manager of each machine.</p>
+</li>
+<li><p>Fault tolerance is also handled by particular Hadoop frameworks (e.g. HortonWorks).</p>
+</li>
+<li><p>Data Replication also used for fault tolerance.</p>
+</li>
+</ul>
+<p><img src="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif" alt=""></p>
+<h3 id="Fault-Tolerance-Hadoop-HA"><a href="#Fault-Tolerance-Hadoop-HA" class="headerlink" title="Fault Tolerance / Hadoop HA"></a>Fault Tolerance / Hadoop HA</h3><p>NameNode serves as single point of failure for Hadoop. If NameNode drops, cluster access becomes unavailable.</p>
+<p>Hadoop High Availability aims to relieve NameNode as SPOF via Quorum Journal Manager (QJM).</p>
+<p>Second NameNode used as slave to first NameNode in a “standby mode” via “JournalNodes” (JNs); JNs are used to correspond client operations.</p>
+<p>To avoid possible data corruption, HA cluster enforces only allow a single active NameNode to be the “writer” to JournalNodes. Data corruption can arise from “split-brain scenario” (nodes in cluster believe they are the only active node).</p>
+<p><img src="https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660" alt=""></p>
+<h3 id="Hadoop-Streaming-–-Performance-amp-Overhead"><a href="#Hadoop-Streaming-–-Performance-amp-Overhead" class="headerlink" title="Hadoop Streaming – Performance &amp; Overhead"></a>Hadoop Streaming – Performance &amp; Overhead</h3><p>Hadoop natively works utilizing Java but offers support to work with other languages (e.g. Python, Ruby, etc) via Hadoop Streaming.</p>
+<p>Hadoop Streaming provides more abstract implementation of Hadoop for generating jobs for Hadoop, there is a performance overhead that makes Hadoop Streaming a more costly implementation over using Java.</p>
+<ul>
+<li><p>Overhead bottleneck comes from implementation of Linux pipe feature.</p>
+</li>
+<li><p>Linux pipe() system call is half-duplex, so two pipes must be opened to read and write data between Hadoop filesystem and external executable file.</p>
+</li>
+</ul>
+<p>Java I/O operations rewrite map pairs to external executables which in turn leads to a performance overhead. (Zheng et. al).</p>
+<p><strong><code>Breakdown of Hadoop Streaming Overhead</code></strong>
+<img src="https://www.researchgate.net/profile/Song_Guo6/publication/239761247/figure/fig3/AS:393244333625357@1470768163687/Figure-3-The-copying-path-of-Key-Value-pairs-in-Hadoop-Streaming-Each-Key-Value.png" alt=""></p>
+<h3 id="Security-HDFS’s-Vulnerabilities"><a href="#Security-HDFS’s-Vulnerabilities" class="headerlink" title="Security: HDFS’s Vulnerabilities"></a>Security: HDFS’s Vulnerabilities</h3><p>HDFS supports no authentication model in its raw form. Instead relies upon Unix-level authentication &amp; authorization.</p>
+<ul>
+<li>As such, HDFS is open to several types of attacks, ranging from impersonation, cluster head bypass attacks, and eavesdropping attacks.</li>
+</ul>
+<p>No encryption of sensitive data in HDFS’s vanilla state.</p>
+<ul>
+<li>“Heavy weight cryptographic operations” are left out due to high overhead on performance.</li>
+</ul>
+<p>Security measures are dependent upon company policy and use of security systems such as Kerberos.</p>
+<h3 id="Sources-–-Online-Information"><a href="#Sources-–-Online-Information" class="headerlink" title="Sources – Online Information"></a>Sources – Online Information</h3><ul>
+<li><p>What is Hadoop? - <a href="https://en.wikipedia.org/wiki/Apache_Hadoop" target="_blank" rel="external">https://en.wikipedia.org/wiki/Apache_Hadoop</a></p>
+</li>
+<li><p>HDFS - <a href="http://www.aosabook.org/en/hdfs.html" target="_blank" rel="external">http://www.aosabook.org/en/hdfs.html</a></p>
+</li>
+<li><p>HDFS Checkpoints - <a href="https://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/" target="_blank" rel="external">https://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/</a></p>
+</li>
+<li><p>Secondary NameNode - <a href="http://hadooptutorial.info/secondary-namenode-in-hadoop/" target="_blank" rel="external">http://hadooptutorial.info/secondary-namenode-in-hadoop/</a></p>
+</li>
+<li><p>Hadoop Common - <a href="https://github.com/apache/hadoop-common" target="_blank" rel="external">https://github.com/apache/hadoop-common</a></p>
+</li>
+<li><p>MapReduce Engine’s Processes - <a href="http://hadoopinrealworld.com/jobtracker-and-tasktracker/" target="_blank" rel="external">http://hadoopinrealworld.com/jobtracker-and-tasktracker/</a></p>
+</li>
+<li><p>YARN - <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html" target="_blank" rel="external">https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html</a></p>
+</li>
+<li><p>Hadoop HA / QJM - <a href="https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html" target="_blank" rel="external">https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html</a></p>
+</li>
+<li><p>Security -<a href="https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/the_limits_of_hadoop_security.html" target="_blank" rel="external">https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/the_limits_of_hadoop_security.html</a></p>
+</li>
+</ul>
+<h3 id="Sources-–-Papers"><a href="#Sources-–-Papers" class="headerlink" title="Sources – Papers"></a>Sources – Papers</h3><p>[1] Fault Tolerance / Hadoop HA - Wang, F., Qiu, J., Yang, J., Dong, B., Li, X., &amp; Li, Y. (2009). Hadoop high availability through metadata replication. Proceeding of the first international workshop on Cloud data management - CloudDB 09. doi:10.1145/1651263.1651271</p>
+<p>[2] Hadoop Security &amp; Vulnerabilities - Sarvabhatla, M., Reddy, M. C., &amp; Vorugunti, C. S. (2015). A Robust and Light Weight Authentication Framework for Hadoop File System in Cloud Computing Environment. Proceedings of the Third International Symposium on Women in Computing and Informatics - WCI 15, 463-468. doi:10.1145/2791405.2791410</p>
+<p>[3] Hadoop Streaming - Ding, M., Zheng, L., Lu, Y., Li, L., Guo, S., &amp; Guo, M. (2011). More Convenient More Overhead: The Performance Evaluation of Hadoop Streaming. Proceedings of the 2011 ACM Symposium on Research in Applied Computation - RACS 11, 307-313. doi:10.1145/2103380.2103444</p>
+<h3 id="Sources-Images"><a href="#Sources-Images" class="headerlink" title="Sources - Images"></a>Sources - Images</h3><ul>
+<li><p>Hadoop Logo - <a href="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png" target="_blank" rel="external">https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png</a></p>
+</li>
+<li><p>HDFS Overview - <a href="https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png" target="_blank" rel="external">https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png</a></p>
+</li>
+<li><p>TaskTracker Overview - <a href="https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg" target="_blank" rel="external">https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg</a></p>
+</li>
+<li><p>YARN Architecture - <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif" target="_blank" rel="external">https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif</a></p>
+</li>
+<li><p>QJM Overview - <a href="https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660" target="_blank" rel="external">https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660</a></p>
+</li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+      &lt;p&gt;&lt;img src=&quot;https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png&quot; al
     
     </summary>
     
-      <category term="Node.js" scheme="https://luyao-wang.github.io/categories/Node-js/"/>
+      <category term="程序媛💁‍技术贴" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/"/>
     
-      <category term="npm" scheme="https://luyao-wang.github.io/categories/Node-js/npm/"/>
+      <category term="en 🇺🇸" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/"/>
     
-      <category term="torrenting" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/"/>
+      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/"/>
     
-      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/school%F0%9F%8E%93/"/>
-    
-      <category term="tmp" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/school%F0%9F%8E%93/tmp/"/>
+      <category term="theory" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/theory/"/>
     
     
-      <category term="tmp" scheme="https://luyao-wang.github.io/tags/tmp/"/>
+      <category term="hadoop" scheme="https://luyao-wang.github.io/tags/hadoop/"/>
+    
+      <category term="big data" scheme="https://luyao-wang.github.io/tags/big-data/"/>
+    
+      <category term="HDFS" scheme="https://luyao-wang.github.io/tags/HDFS/"/>
+    
+      <category term="MapReduce" scheme="https://luyao-wang.github.io/tags/MapReduce/"/>
+    
+      <category term="distributed systems" scheme="https://luyao-wang.github.io/tags/distributed-systems/"/>
+    
+      <category term="distributed file system" scheme="https://luyao-wang.github.io/tags/distributed-file-system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Introduction to torrenting &amp; torrent clients​</title>
+    <link href="https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients%E2%80%8B/"/>
+    <id>https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients​/</id>
+    <published>2017-08-24T04:57:56.000Z</published>
+    <updated>2017-08-24T06:05:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="What-is-a-torrent-client-​"><a href="#What-is-a-torrent-client-​" class="headerlink" title="What is a torrent client?​"></a>What is a torrent client?​</h3><p>A tool that helps assist users in downloading files seamlessly, quickly, and without depending upon a centralized server.​</p>
+<p>Implements the BitTorrent protocol. Why use torrenting? We’ll explore this next.​</p>
+<h3 id="Torrenting-Terminologies-amp-Why-Torrent-​"><a href="#Torrenting-Terminologies-amp-Why-Torrent-​" class="headerlink" title="Torrenting: Terminologies &amp; Why Torrent?​"></a>Torrenting: Terminologies &amp; Why Torrent?​</h3><p>Torrents are files that point to a remote server or themselves act as the server. This server contains a list of machines that contain portions of the file(s) to download.</p>
+<p>Machines that are downloading a file are known as <code>“peers”</code>.​</p>
+<p>Machines that contain even just a portion of a file AND are able to share the file are known as <code>“seeds”</code>. ​
+When multiple machines all are sharing the same torrent file, this is known as a <code>“swarm”</code>.​</p>
+<p>Torrenting is much faster than utilizing a centralized server for two main reasons:​</p>
+<ul>
+<li><p>High levels of traffic to a machine can slow down the machine or cause a crash from servicing too many requests at once.​</p>
+</li>
+<li><p>BitTorrent protocol allows seeds themselves to <em>immediately</em> start sharing information once portions of a file have been downloaded. Another machine does not need to wait for the first machine to finish downloading the file before it can receive parts of the file.​</p>
+</li>
+</ul>
+<p><strong><code>Illustration of a typical BitTorrent Swarm​</code></strong></p>
+<p><img src="https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png" alt=""></p>
+<h3 id="Managing-Torrents​"><a href="#Managing-Torrents​" class="headerlink" title="Managing Torrents​"></a>Managing Torrents​</h3><p>The decentralized nature of torrenting is great in theory but for it to work in practice, we’d still need some way of keeping track of all the machines downloading a file (peers) and all the machines that are acting as a container for a file (seeds).​</p>
+<p>BitTorrent handles this via a <code>“Tracker”</code>. The tracker keeps track of all peers connected in a swarm along with all of the various seeds that peers can connect to, to access a file.​</p>
+<p>The tracker also keeps track of what “part” of a file is attached to what machine. This ensures that peers will get the various pieces of data that they need for a file and no duplicate copies of information that has already been attained.​</p>
+<p><strong><code>BitTorrent Tracker Diagram​</code></strong>
+<img src="http://images.morehawes.co.uk/bittorrent/tracker.png" alt=""></p>
+<h3 id="BitTorrent-Vulnerabilities-Loss-of-Seed​"><a href="#BitTorrent-Vulnerabilities-Loss-of-Seed​" class="headerlink" title="BitTorrent Vulnerabilities : Loss of Seed​"></a>BitTorrent Vulnerabilities : Loss of Seed​</h3><p>BitTorrent’s use of swarms &amp; multiple seeds for components of a file allows peers to potentially download files faster. Part of this is by allowing machines with only a <em>portion</em> of a file to immediately begin transferring data. But what happens if a seed exits a swarm? Do we lose a vital chunk of data?​</p>
+<p>No! BitTorrent works around this by way of “rarest first” algorithm. What is the “rarest first” algorithm?​</p>
+<p>Each piece of data in a file is assigned a value. Each peer in a swarm has attached with it a reference to those pieces of data. When a new peer joins the swarm, the BitTorrent protocol will look for the data with the lowest reference count (therefore the rarest piece) and will give any and all new peers that section of data before any “common” pieces of information.​</p>
+<p>Now if a seed in the BitTorrent swarm goes away (e.g. disconnect), chances are higher that all other peers will have any pieces of data that the lost seed contained.​</p>
+<h3 id="BitTorrent-Vulnerabilities-Multiple-Requests​"><a href="#BitTorrent-Vulnerabilities-Multiple-Requests​" class="headerlink" title="BitTorrent Vulnerabilities: Multiple Requests​"></a>BitTorrent Vulnerabilities: Multiple Requests​</h3><p>Rarest-first algorithm helps us circumvent the issue of data loss from a seed being removed from a swarm but another pitfall is the bottleneck imposed on each seed of the swarm.​</p>
+<p>When a peer requests a portion of a file from a seed, the seed must spend some time accessing the component of the file and stream it to the peer. ​</p>
+<p>When too many requests are made to a seed at once, the seed may refuse to communicate with a peer. This is known as <code>“choking”</code>.​</p>
+<p>To work around choking, BitTorrent will rotate which seed should be targeted by a peer via a “choking algorithm”. Likewise, to “unchoke” a seed, the server will send an unchoke message to tell it to stop blocking requests from peers that may be targeting the seed.​</p>
+<h3 id="BitTorrent-Vulnerabilities-Ambiguous-Speeds​"><a href="#BitTorrent-Vulnerabilities-Ambiguous-Speeds​" class="headerlink" title="BitTorrent Vulnerabilities: Ambiguous Speeds​"></a>BitTorrent Vulnerabilities: Ambiguous Speeds​</h3><p>All seeds are peers but not all peers are seeds. When a peer is a member of a swarm and downloads a file but does not act as a seed, this peer is known as a <code>&quot;leech&quot;</code>.​</p>
+<p>High prevalence of <code>&quot;leechers&quot;</code> will impose a lot of stress on the number of requests given to a seed while at the same time not increasing file transfer performance. Controlling the amount of leechers could block out some potential users and/or add in extra overhead.​</p>
+<p>The exact number of peers for any given swarm and any given file is heavily dependent both on the popularity of a file (more downloaded files will have more seeds, therefore higher download speeds for new peers) and on the number of seeds attached to a given swarm.​</p>
+<p>Because of this, the exact speeds of any given swarm are speculative at best. For business class software, this kind of ambiguous speeds could result in the software failing to achieve popularity on the market. ​</p>
+<h3 id="Ancillary-Challenges-No-search-engine-​"><a href="#Ancillary-Challenges-No-search-engine-​" class="headerlink" title="Ancillary Challenges: No search engine!​"></a>Ancillary Challenges: No search engine!​</h3><p>One problem posed with torrent clients is the lack of a search engine built in. When a peer intends to torrent a file, the user of the peer must know exactly what they are looking for <em>and</em> where to look for it. Torrent search engines do exist as third parties but are not built into the box. ​</p>
+<p>Utilization of these third parties <em>also</em> pose problems both due to the fact that at times torrents are used to transfer illegal content (e.g. copyrighted materials) and due to that fact, at times these torrent search engines will contain malicious software (malware).​</p>
+<p>At times the validity of a particular torrent can be suspect as well. Torrent files themselves (especially if in a compressed format such as .zip) can at times contain malware. This makes at least some torrent search engines even harder to trust.​</p>
+<h3 id="Sources-Used-amp-Useful-Links"><a href="#Sources-Used-amp-Useful-Links" class="headerlink" title="Sources Used &amp; Useful Links"></a>Sources Used &amp; Useful Links</h3><ul>
+<li><p>BitTorrent Tracker: <a href="http://images.morehawes.co.uk/bittorrent/tracker.png​" target="_blank" rel="external">http://images.morehawes.co.uk/bittorrent/tracker.png​</a></p>
+</li>
+<li><p>Rarest First Principle: <a href="http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf​" target="_blank" rel="external">http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf​</a></p>
+</li>
+<li><p>First BitTorrent Tracker Diagram : <a href="https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png" target="_blank" rel="external">https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png</a></p>
+</li>
+<li><p>Second BitTorrent Tracker Diagram : <a href="http://images.morehawes.co.uk/bittorrent/tracker.png" target="_blank" rel="external">http://images.morehawes.co.uk/bittorrent/tracker.png</a></p>
+</li>
+<li><p>vaibhav-walia@github : <a href="https://github.com/vaibhav-walia" target="_blank" rel="external">https://github.com/vaibhav-walia</a></p>
+</li>
+<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/bittorrent-protocol" target="_blank" rel="external">https://github.com/webtorrent/bittorrent-protocol</a></p>
+</li>
+<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/create-torrent" target="_blank" rel="external">https://github.com/webtorrent/create-torrent</a></p>
+</li>
+<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/webtorrent-cli" target="_blank" rel="external">https://github.com/webtorrent/webtorrent-cli</a>
+​</p>
+</li>
+<li><p>Node.js v8.4.0 Documentation : <a href="https://nodejs.org/api/fs.html" target="_blank" rel="external">https://nodejs.org/api/fs.html</a></p>
+</li>
+<li><p>npm : <a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a></p>
+</li>
+<li><p>Internet Archive : <a href="https://archive.org/" target="_blank" rel="external">https://archive.org/</a></p>
+</li>
+<li><p>Vuze : <a href="https://wiki.vuze.com/w/Legal_torrent_sites" target="_blank" rel="external">https://wiki.vuze.com/w/Legal_torrent_sites</a></p>
+</li>
+<li><p>patorjk : <a href="http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo" target="_blank" rel="external">http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo</a></p>
+</li>
+</ul>
+<p>​</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;What-is-a-torrent-client-​&quot;&gt;&lt;a href=&quot;#What-is-a-torrent-client-​&quot; class=&quot;headerlink&quot; title=&quot;What is a torrent client?​&quot;&gt;&lt;/a&gt;What is 
+    
+    </summary>
+    
+      <category term="程序媛💁‍技术贴" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/"/>
+    
+      <category term="en 🇺🇸" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/"/>
+    
+      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/"/>
+    
+      <category term="theory" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/theory/"/>
+    
+    
+      <category term="torrent" scheme="https://luyao-wang.github.io/tags/torrent/"/>
+    
+      <category term="torrenting" scheme="https://luyao-wang.github.io/tags/torrenting/"/>
+    
+      <category term="torrent client" scheme="https://luyao-wang.github.io/tags/torrent-client/"/>
+    
+      <category term="BitTorrent" scheme="https://luyao-wang.github.io/tags/BitTorrent/"/>
+    
+      <category term="Tracker" scheme="https://luyao-wang.github.io/tags/Tracker/"/>
     
   </entry>
   
@@ -69,13 +284,13 @@
     <link href="https://luyao-wang.github.io/2017/08/15/hello-world/"/>
     <id>https://luyao-wang.github.io/2017/08/15/hello-world/</id>
     <published>2017-08-16T01:38:00.000Z</published>
-    <updated>2017-08-18T09:43:16.000Z</updated>
+    <updated>2017-08-24T06:44:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>这个年头儿有了开源，写个码很快。只不过我从小不擅长也从不喜欢写作，从小写过的作文好多不及格。所以这几天博客光有个架子，没有帖子。</p>
 <p>要看这个博客的源码，<a href="https://github.com/luyao-wang/luyao-wang.github.io" target="_blank" rel="external">点介里🙊</a>和<a href="https://github.com/luyao-wang/blog" target="_blank" rel="external">介里🙉</a>! <em><code>写码细节</code></em>有时间我会另开帖子分享。</p>
 <p>我叫王璐瑶，“璐”和“瑶”意美玉，土生土长的北京人，说话有京腔儿，打字爱加儿化音。</p>
-<p>初中人大附，高中北师大实验，大学对外经贸（管理学学士学位-会计💁），之后保研本校（科学硕士学位-会计💁）。</p>
-<p>本科我学习努力，一切顺利，拿过国家奖学金，也保了研。研一结束之后我来了美国，进入了加州大学伯克利分校<code>(UC Berkeley)</code>学电子工程和计算机科学<code>(EECS)</code>。2016年十月加入Cisco，开心的当了半年软件工程实习生😁，浅尝了做一个职业程序媛儿的赶脚🤓。2017年三月，我接受了加州州立东湾分校<code>(Cal State East Bay)</code>计算机科学硕士项目的录取。</p>
+<p>初中人大附，高中北师大实验，大学对外经贸（管理学学士学位 : 会计💁），之后保研本校（科学硕士学位 : 会计💁）。</p>
+<p>本科我学习努力，一切顺利，拿过国家奖学金，也保了研。研一结束之后我来了美国，进入了加州大学伯克利分校<code>(UC Berkeley 🐻)</code>学电子工程和计算机科学<code>(EECS)</code>。2016年十月加入Cisco，开心的当了半年软件工程实习生😁，浅尝了做一个职业程序媛儿的赶脚🤓， #大数据 #数据库 #人工智能 #机械学习。2017年三月，我接受了加州州立东湾分校<code>(Cal State East Bay)</code>计算机科学硕士项目的录取。</p>
 <p>从国内🇨🇳到美国🇺🇸打拼、从会计转行做程序媛、一个硕士重新读大一，个中缘由和滋味、三年的心酸历程、对父母的思念、对国内好朋友们的想念、几次转学、二十次搬家、对转行的怀疑，我的文笔写不出，我也没必要诉苦和矫情。详尽的英文简历[看这里🙋]。</p>
 <p>来贴我的一张图问好！</p>
 <p><img src="/images/IMG_4385.JPG" alt=""></p>
@@ -91,8 +306,12 @@
     
       <category term="中文🇨🇳" scheme="https://luyao-wang.github.io/categories/%E4%B8%AD%E6%96%87%F0%9F%87%A8%F0%9F%87%B3/"/>
     
+      <category term="不严肃" scheme="https://luyao-wang.github.io/categories/%E4%B8%AD%E6%96%87%F0%9F%87%A8%F0%9F%87%B3/%E4%B8%8D%E4%B8%A5%E8%82%83/"/>
+    
     
       <category term="中文🇨🇳" scheme="https://luyao-wang.github.io/tags/%E4%B8%AD%E6%96%87%F0%9F%87%A8%F0%9F%87%B3/"/>
+    
+      <category term="个人简介" scheme="https://luyao-wang.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
     
   </entry>
   

@@ -2,21 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://luyao-wang.github.io/2017/08/23/bt-demo/</loc>
-    
-    <lastmod>2017-08-24T01:22:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://luyao-wang.github.io/2017/08/15/hello-world/</loc>
     
-    <lastmod>2017-08-18T09:43:16.000Z</lastmod>
+    <lastmod>2017-08-24T06:44:47.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/cs-3240/index.html</loc>
+    <loc>https://luyao-wang.github.io/about/index.html</loc>
+    
+    <lastmod>2017-08-24T06:42:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients%E2%80%8B/</loc>
+    
+    <lastmod>2017-08-24T06:05:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/</loc>
+    
+    <lastmod>2017-08-24T06:05:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
     
     <lastmod>2017-08-18T09:43:00.000Z</lastmod>
     
@@ -26,13 +40,6 @@
     <loc>https://luyao-wang.github.io/search/index.html</loc>
     
     <lastmod>2017-08-18T09:38:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://luyao-wang.github.io/about/index.html</loc>
-    
-    <lastmod>2017-08-18T08:14:38.000Z</lastmod>
     
   </url>
   
