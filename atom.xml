@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luyao-wang.github.io/"/>
-  <updated>2017-08-18T08:14:40.000Z</updated>
+  <updated>2017-08-24T00:11:39.000Z</updated>
   <id>https://luyao-wang.github.io/</id>
   
   <author>
@@ -16,11 +16,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS6580 Final Presentation - Miniature BitTorrent Client 💻</title>
+    <link href="https://luyao-wang.github.io/2017/08/23/bt-demo/"/>
+    <id>https://luyao-wang.github.io/2017/08/23/bt-demo/</id>
+    <published>2017-08-23T22:05:54.000Z</published>
+    <updated>2017-08-24T00:11:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">     ___           ___           ___           ___</div><div class="line">    /\  \         /\  \         /\__\         /\  \</div><div class="line">   /::\  \       /::\  \       /::|  |       /::\  \</div><div class="line">  /:/\:\  \     /:/\:\  \     /:|:|  |      /:/\:\  \</div><div class="line"> /:/  \:\__\   /::\~\:\  \   /:/|:|__|__   /:/  \:\  \</div><div class="line">/:/__/ \:|__| /:/\:\ \:\__\ /:/ |::::\__\ /:/__/ \:\__\</div><div class="line">\:\  \ /:/  / \:\~\:\ \/__/ \/__/~~/:/  / \:\  \ /:/  /</div><div class="line"> \:\  /:/  /   \:\ \:\__\         /:/  /   \:\  /:/  /</div><div class="line">  \:\/:/  /     \:\ \/__/        /:/  /     \:\/:/  /</div><div class="line">   \::/__/       \:\__\         /:/  /       \::/  /</div><div class="line">    ~~            \/__/         \/__/         \/__/</div></pre></td></tr></table></figure>
+<h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><p>node <code>v8.4.0</code></p>
+<p>npm <code>5.3.0</code></p>
+<h3 id="Dependencies"><a href="#Dependencies" class="headerlink" title="Dependencies"></a>Dependencies</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&quot;dependencies&quot;: &#123;</div><div class="line">    [&quot;bencode&quot;](https://www.npmjs.com/package/bencode.js): &quot;^0.10.0&quot;,</div><div class="line">    [&quot;parse-torrent&quot;](https://www.npmjs.com/package/parse-torrent): &quot;^5.8.1&quot;,</div><div class="line">    &quot;reinstall&quot;: &quot;^2.0.0&quot;,</div><div class="line">    &quot;request&quot;: &quot;^2.79.0&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ cd bt-demo</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ npm ls</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ cd srcc</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../testTorrents/1.torrent</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../testTorrents/2.torrent</div><div class="line">Luyaos-MacBook-Pro:Downloads luyaowang$ node torrent.js ./../testTorrents/s.torrent</div></pre></td></tr></table></figure>
+<h3 id="Sample-Run"><a href="#Sample-Run" class="headerlink" title="Sample Run"></a>Sample Run</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">Luyaos-MacBook-Pro:bt-demo luyaowang$ node torrent.js ./../testTorrents/1.torrent</div><div class="line">134.154.70.45:6687 Messages: Error: connect ECONNREFUSED 134.154.70.45:6687,Closed</div><div class="line"></div><div class="line"></div><div class="line">172.78.20.37:50563 Messages: Connected,handshake sent ,handshake complete ,Sent interested ,Bitfield</div><div class="line">received ,Have(4),Have(11),Have(2),Have(6),Have(12),Have(9),Have(8),Have(5),Have(7),Have(10),Have(1)</div><div class="line">,Have(0),Have(3),Un-Choke received ,Sent request for 4 ,Received all blocks for piece 4,valid</div><div class="line">piece,Sent request for 11 ,Received all blocks for piece 11,valid piece,Sent request for 2 ,Received</div><div class="line">all blocks for piece 2,valid piece,Sent request for 6 ,Received all blocks for piece 6,valid piece,Sent</div><div class="line">request for 12 ,Received all blocks for piece 12,valid piece,Sent request for 9 ,Received all blocks</div><div class="line">for piece 9,valid piece,Sent request for 8 ,Received all blocks for piece 8,valid piece,Sent request</div><div class="line">for 5 ,Received all blocks for piece 5,valid piece,Sent request for 7 ,Received all blocks for piece</div><div class="line">7,valid piece,Sent request for 10 ,Received all blocks for piece 10,valid piece,Sent request for 1</div><div class="line">,Received all blocks for piece 1,valid piece,Sent request for 0 ,Received all blocks for piece 0,valid</div><div class="line">piece,Sent request for 3 ,Received all blocks for piece 3,valid piece,No more pieces to request</div><div class="line"></div><div class="line"></div><div class="line">100% done</div><div class="line">Done:13</div><div class="line">Remianing:0</div><div class="line">Download Complete!</div><div class="line">File will be saved at : ./../Downloads/</div></pre></td></tr></table></figure>
+<h3 id="Useful-Links"><a href="#Useful-Links" class="headerlink" title="Useful Links"></a>Useful Links</h3><ul>
+<li><p><a href="https://nodejs.org/api/fs.html" target="_blank" rel="external">Node.js v8.4.0 Documentation</a></p>
+</li>
+<li><p><a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a></p>
+</li>
+<li><p><a href="https://archive.org/" target="_blank" rel="external">Internet Archive</a></p>
+</li>
+<li><p><a href="https://wiki.vuze.com/w/Legal_torrent_sites" target="_blank" rel="external">Vuze</a></p>
+</li>
+<li><p><a href="http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo" target="_blank" rel="external">patorjk</a></p>
+</li>
+</ul>
+<h3 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h3><p>Credits to <a href="https://github.com/vaibhav-walia" target="_blank" rel="external">vaibhav-walia@github</a>, <a href="https://github.com/webtorrent/create-torrent" target="_blank" rel="external">WebTorrent, LLC.: create-torrent</a>, <a href="https://github.com/webtorrent/webtorrent-cli" target="_blank" rel="external">WebTorrent, LLC.: webtorrent-cli</a>, <a href="https://github.com/webtorrent/bittorrent-protocol" target="_blank" rel="external">WebTorrent, LLC.: bittorrent-protocol</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+      <category term="Node.js" scheme="https://luyao-wang.github.io/categories/Node-js/"/>
+    
+      <category term="npm" scheme="https://luyao-wang.github.io/categories/Node-js/npm/"/>
+    
+      <category term="torrenting" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/"/>
+    
+      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/school%F0%9F%8E%93/"/>
+    
+      <category term="tmp" scheme="https://luyao-wang.github.io/categories/Node-js/npm/torrenting/school%F0%9F%8E%93/tmp/"/>
+    
+    
+      <category term="tmp" scheme="https://luyao-wang.github.io/tags/tmp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>春花秋月何时了，往事知多少。</title>
     <link href="https://luyao-wang.github.io/2017/08/15/hello-world/"/>
     <id>https://luyao-wang.github.io/2017/08/15/hello-world/</id>
     <published>2017-08-16T01:38:00.000Z</published>
-    <updated>2017-08-18T08:14:40.000Z</updated>
+    <updated>2017-08-18T09:43:16.000Z</updated>
     
     <content type="html"><![CDATA[<p>这个年头儿有了开源，写个码很快。只不过我从小不擅长也从不喜欢写作，从小写过的作文好多不及格。所以这几天博客光有个架子，没有帖子。</p>
 <p>要看这个博客的源码，<a href="https://github.com/luyao-wang/luyao-wang.github.io" target="_blank" rel="external">点介里🙊</a>和<a href="https://github.com/luyao-wang/blog" target="_blank" rel="external">介里🙉</a>! <em><code>写码细节</code></em>有时间我会另开帖子分享。</p>
@@ -40,6 +89,10 @@
     
     </summary>
     
+      <category term="中文🇨🇳" scheme="https://luyao-wang.github.io/categories/%E4%B8%AD%E6%96%87%F0%9F%87%A8%F0%9F%87%B3/"/>
+    
+    
+      <category term="中文🇨🇳" scheme="https://luyao-wang.github.io/tags/%E4%B8%AD%E6%96%87%F0%9F%87%A8%F0%9F%87%B3/"/>
     
   </entry>
   
