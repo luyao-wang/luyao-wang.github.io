@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luyao-wang.github.io/"/>
-  <updated>2017-08-24T06:05:38.000Z</updated>
+  <updated>2017-08-24T22:37:15.000Z</updated>
   <id>https://luyao-wang.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/"/>
     <id>https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/</id>
     <published>2017-08-24T05:43:58.000Z</published>
-    <updated>2017-08-24T06:05:38.000Z</updated>
+    <updated>2017-08-24T22:37:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png" alt=""></p>
 <h3 id="What-is-Hadoop"><a href="#What-is-Hadoop" class="headerlink" title="What is Hadoop?"></a>What is Hadoop?</h3><p>Hadoop is a framework of MapReduce utilized for handling “Big Data” operations and storage.</p>
@@ -112,41 +112,23 @@
 <li>“Heavy weight cryptographic operations” are left out due to high overhead on performance.</li>
 </ul>
 <p>Security measures are dependent upon company policy and use of security systems such as Kerberos.</p>
-<h3 id="Sources-–-Online-Information"><a href="#Sources-–-Online-Information" class="headerlink" title="Sources – Online Information"></a>Sources – Online Information</h3><ul>
-<li><p>What is Hadoop? - <a href="https://en.wikipedia.org/wiki/Apache_Hadoop" target="_blank" rel="external">https://en.wikipedia.org/wiki/Apache_Hadoop</a></p>
-</li>
-<li><p>HDFS - <a href="http://www.aosabook.org/en/hdfs.html" target="_blank" rel="external">http://www.aosabook.org/en/hdfs.html</a></p>
-</li>
-<li><p>HDFS Checkpoints - <a href="https://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/" target="_blank" rel="external">https://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/</a></p>
-</li>
-<li><p>Secondary NameNode - <a href="http://hadooptutorial.info/secondary-namenode-in-hadoop/" target="_blank" rel="external">http://hadooptutorial.info/secondary-namenode-in-hadoop/</a></p>
-</li>
-<li><p>Hadoop Common - <a href="https://github.com/apache/hadoop-common" target="_blank" rel="external">https://github.com/apache/hadoop-common</a></p>
-</li>
-<li><p>MapReduce Engine’s Processes - <a href="http://hadoopinrealworld.com/jobtracker-and-tasktracker/" target="_blank" rel="external">http://hadoopinrealworld.com/jobtracker-and-tasktracker/</a></p>
-</li>
-<li><p>YARN - <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html" target="_blank" rel="external">https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html</a></p>
-</li>
-<li><p>Hadoop HA / QJM - <a href="https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html" target="_blank" rel="external">https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html</a></p>
-</li>
-<li><p>Security -<a href="https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/the_limits_of_hadoop_security.html" target="_blank" rel="external">https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/the_limits_of_hadoop_security.html</a></p>
-</li>
-</ul>
+<h3 id="Sources-–-Online-Information"><a href="#Sources-–-Online-Information" class="headerlink" title="Sources – Online Information"></a>Sources – Online Information</h3><p>👉 <a href="https://en.wikipedia.org/wiki/Apache_Hadoop" target="_blank" rel="external">What is Hadoop? - Wikipedia</a></p>
+<p>👉 <a href="http://www.aosabook.org/en/hdfs.html" target="_blank" rel="external">HDFS</a></p>
+<p>👉 <a href="https://blog.cloudera.com/blog/2014/03/a-guide-to-checkpointing-in-hadoop/" target="_blank" rel="external">HDFS Checkpoints</a></p>
+<p>👉 <a href="http://hadooptutorial.info/secondary-namenode-in-hadoop/" target="_blank" rel="external">Secondary NameNode</a></p>
+<p>👉 <a href="https://github.com/apache/hadoop-common" target="_blank" rel="external">Hadoop Common - Github</a></p>
+<p>👉 <a href="http://hadoopinrealworld.com/jobtracker-and-tasktracker/" target="_blank" rel="external">MapReduce Engine’s Processes</a></p>
+<p>👉 <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html" target="_blank" rel="external">YARN - Hadoop Docs</a></p>
+<p>👉 <a href="https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-hdfs/HDFSHighAvailabilityWithQJM.html" target="_blank" rel="external">HDFS with QJM - Hadoop Docs</a></p>
+<p>👉 <a href="https://steveloughran.gitbooks.io/kerberos_and_hadoop/content/sections/the_limits_of_hadoop_security.html" target="_blank" rel="external">Security</a></p>
 <h3 id="Sources-–-Papers"><a href="#Sources-–-Papers" class="headerlink" title="Sources – Papers"></a>Sources – Papers</h3><p>[1] Fault Tolerance / Hadoop HA - Wang, F., Qiu, J., Yang, J., Dong, B., Li, X., &amp; Li, Y. (2009). Hadoop high availability through metadata replication. Proceeding of the first international workshop on Cloud data management - CloudDB 09. doi:10.1145/1651263.1651271</p>
 <p>[2] Hadoop Security &amp; Vulnerabilities - Sarvabhatla, M., Reddy, M. C., &amp; Vorugunti, C. S. (2015). A Robust and Light Weight Authentication Framework for Hadoop File System in Cloud Computing Environment. Proceedings of the Third International Symposium on Women in Computing and Informatics - WCI 15, 463-468. doi:10.1145/2791405.2791410</p>
 <p>[3] Hadoop Streaming - Ding, M., Zheng, L., Lu, Y., Li, L., Guo, S., &amp; Guo, M. (2011). More Convenient More Overhead: The Performance Evaluation of Hadoop Streaming. Proceedings of the 2011 ACM Symposium on Research in Applied Computation - RACS 11, 307-313. doi:10.1145/2103380.2103444</p>
-<h3 id="Sources-Images"><a href="#Sources-Images" class="headerlink" title="Sources - Images"></a>Sources - Images</h3><ul>
-<li><p>Hadoop Logo - <a href="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png" target="_blank" rel="external">https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png</a></p>
-</li>
-<li><p>HDFS Overview - <a href="https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png" target="_blank" rel="external">https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png</a></p>
-</li>
-<li><p>TaskTracker Overview - <a href="https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg" target="_blank" rel="external">https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg</a></p>
-</li>
-<li><p>YARN Architecture - <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif" target="_blank" rel="external">https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif</a></p>
-</li>
-<li><p>QJM Overview - <a href="https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660" target="_blank" rel="external">https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660</a></p>
-</li>
-</ul>
+<h3 id="Sources-Images"><a href="#Sources-Images" class="headerlink" title="Sources - Images"></a>Sources - Images</h3><p>👉 <a href="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcYAAAAJDgwYjA0ZmViLTJiNzgtNGJmMS1iNjE0LWQ3MzhiZmNjNzNhMg.png" target="_blank" rel="external">Hadoop Logo</a></p>
+<p>👉 <a href="https://punekaramit.files.wordpress.com/2014/06/hadoop-overview.png" target="_blank" rel="external">HDFS Overview</a></p>
+<p>👉 <a href="https://examples.javacodegeeks.com/wp-content/uploads/2015/11/MapReduce.jpg" target="_blank" rel="external">TaskTracker Overview</a></p>
+<p>👉 <a href="https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/yarn_architecture.gif" target="_blank" rel="external">YARN Architecture</a></p>
+<p>👉 <a href="https://knoldus.files.wordpress.com/2017/06/namenode.png?w=660" target="_blank" rel="external">QJM Overview</a></p>
 ]]></content>
     
     <summary type="html">
@@ -179,11 +161,11 @@
   </entry>
   
   <entry>
-    <title>Introduction to torrenting &amp; torrent clients​</title>
+    <title>Introduction to Torrenting &amp; Torrent Clients​</title>
     <link href="https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients%E2%80%8B/"/>
     <id>https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients​/</id>
     <published>2017-08-24T04:57:56.000Z</published>
-    <updated>2017-08-24T06:05:44.000Z</updated>
+    <updated>2017-08-24T22:24:23.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="What-is-a-torrent-client-​"><a href="#What-is-a-torrent-client-​" class="headerlink" title="What is a torrent client?​"></a>What is a torrent client?​</h3><p>A tool that helps assist users in downloading files seamlessly, quickly, and without depending upon a centralized server.​</p>
 <p>Implements the BitTorrent protocol. Why use torrenting? We’ll explore this next.​</p>
@@ -198,12 +180,12 @@ When multiple machines all are sharing the same torrent file, this is known as a
 <li><p>BitTorrent protocol allows seeds themselves to <em>immediately</em> start sharing information once portions of a file have been downloaded. Another machine does not need to wait for the first machine to finish downloading the file before it can receive parts of the file.​</p>
 </li>
 </ul>
-<p><strong><code>Illustration of a typical BitTorrent Swarm​</code></strong></p>
+<p><a href="https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png" target="_blank" rel="external"><strong><code>Illustration of a typical BitTorrent Swarm​</code></strong></a></p>
 <p><img src="https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png" alt=""></p>
 <h3 id="Managing-Torrents​"><a href="#Managing-Torrents​" class="headerlink" title="Managing Torrents​"></a>Managing Torrents​</h3><p>The decentralized nature of torrenting is great in theory but for it to work in practice, we’d still need some way of keeping track of all the machines downloading a file (peers) and all the machines that are acting as a container for a file (seeds).​</p>
 <p>BitTorrent handles this via a <code>“Tracker”</code>. The tracker keeps track of all peers connected in a swarm along with all of the various seeds that peers can connect to, to access a file.​</p>
 <p>The tracker also keeps track of what “part” of a file is attached to what machine. This ensures that peers will get the various pieces of data that they need for a file and no duplicate copies of information that has already been attained.​</p>
-<p><strong><code>BitTorrent Tracker Diagram​</code></strong>
+<p><a href="http://images.morehawes.co.uk/bittorrent/tracker.png" target="_blank" rel="external"><strong><code>BitTorrent Tracker Diagram​</code></strong></a>
 <img src="http://images.morehawes.co.uk/bittorrent/tracker.png" alt=""></p>
 <h3 id="BitTorrent-Vulnerabilities-Loss-of-Seed​"><a href="#BitTorrent-Vulnerabilities-Loss-of-Seed​" class="headerlink" title="BitTorrent Vulnerabilities : Loss of Seed​"></a>BitTorrent Vulnerabilities : Loss of Seed​</h3><p>BitTorrent’s use of swarms &amp; multiple seeds for components of a file allows peers to potentially download files faster. Part of this is by allowing machines with only a <em>portion</em> of a file to immediately begin transferring data. But what happens if a seed exits a swarm? Do we lose a vital chunk of data?​</p>
 <p>No! BitTorrent works around this by way of “rarest first” algorithm. What is the “rarest first” algorithm?​</p>
@@ -220,35 +202,17 @@ When multiple machines all are sharing the same torrent file, this is known as a
 <h3 id="Ancillary-Challenges-No-search-engine-​"><a href="#Ancillary-Challenges-No-search-engine-​" class="headerlink" title="Ancillary Challenges: No search engine!​"></a>Ancillary Challenges: No search engine!​</h3><p>One problem posed with torrent clients is the lack of a search engine built in. When a peer intends to torrent a file, the user of the peer must know exactly what they are looking for <em>and</em> where to look for it. Torrent search engines do exist as third parties but are not built into the box. ​</p>
 <p>Utilization of these third parties <em>also</em> pose problems both due to the fact that at times torrents are used to transfer illegal content (e.g. copyrighted materials) and due to that fact, at times these torrent search engines will contain malicious software (malware).​</p>
 <p>At times the validity of a particular torrent can be suspect as well. Torrent files themselves (especially if in a compressed format such as .zip) can at times contain malware. This makes at least some torrent search engines even harder to trust.​</p>
-<h3 id="Sources-Used-amp-Useful-Links"><a href="#Sources-Used-amp-Useful-Links" class="headerlink" title="Sources Used &amp; Useful Links"></a>Sources Used &amp; Useful Links</h3><ul>
-<li><p>BitTorrent Tracker: <a href="http://images.morehawes.co.uk/bittorrent/tracker.png​" target="_blank" rel="external">http://images.morehawes.co.uk/bittorrent/tracker.png​</a></p>
-</li>
-<li><p>Rarest First Principle: <a href="http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf​" target="_blank" rel="external">http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf​</a></p>
-</li>
-<li><p>First BitTorrent Tracker Diagram : <a href="https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png" target="_blank" rel="external">https://raw.githubusercontent.com/webtorrent/bittorrent-tracker/master/img.png</a></p>
-</li>
-<li><p>Second BitTorrent Tracker Diagram : <a href="http://images.morehawes.co.uk/bittorrent/tracker.png" target="_blank" rel="external">http://images.morehawes.co.uk/bittorrent/tracker.png</a></p>
-</li>
-<li><p>vaibhav-walia@github : <a href="https://github.com/vaibhav-walia" target="_blank" rel="external">https://github.com/vaibhav-walia</a></p>
-</li>
-<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/bittorrent-protocol" target="_blank" rel="external">https://github.com/webtorrent/bittorrent-protocol</a></p>
-</li>
-<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/create-torrent" target="_blank" rel="external">https://github.com/webtorrent/create-torrent</a></p>
-</li>
-<li><p>WebTorrent, LLC.@github : <a href="https://github.com/webtorrent/webtorrent-cli" target="_blank" rel="external">https://github.com/webtorrent/webtorrent-cli</a>
+<h3 id="Sources-Used-amp-Useful-Links"><a href="#Sources-Used-amp-Useful-Links" class="headerlink" title="Sources Used &amp; Useful Links"></a>Sources Used &amp; Useful Links</h3><p>🍕 <a href="http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf​" target="_blank" rel="external">Rarest First Principle - PDF</a></p>
+<p>🌭 <a href="https://github.com/vaibhav-walia" target="_blank" rel="external">Vaibhav Walia - Github</a></p>
+<p>🍔 <a href="https://github.com/webtorrent/bittorrent-protocol" target="_blank" rel="external">BitTorrent Protocol - Github</a></p>
+<p>🍟 <a href="https://github.com/webtorrent/create-torrent" target="_blank" rel="external">Create Torrent - Github</a></p>
+<p>🌮 <a href="https://github.com/webtorrent/webtorrent-cli" target="_blank" rel="external">WebTorrent CLI - Github</a>
 ​</p>
-</li>
-<li><p>Node.js v8.4.0 Documentation : <a href="https://nodejs.org/api/fs.html" target="_blank" rel="external">https://nodejs.org/api/fs.html</a></p>
-</li>
-<li><p>npm : <a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a></p>
-</li>
-<li><p>Internet Archive : <a href="https://archive.org/" target="_blank" rel="external">https://archive.org/</a></p>
-</li>
-<li><p>Vuze : <a href="https://wiki.vuze.com/w/Legal_torrent_sites" target="_blank" rel="external">https://wiki.vuze.com/w/Legal_torrent_sites</a></p>
-</li>
-<li><p>patorjk : <a href="http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo" target="_blank" rel="external">http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo</a></p>
-</li>
-</ul>
+<p>🌯 <a href="https://nodejs.org/api/fs.html" target="_blank" rel="external">Node.js</a></p>
+<p>🍜 <a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a></p>
+<p>🍮 <a href="https://archive.org/" target="_blank" rel="external">Internet Archive</a></p>
+<p>🍭 <a href="https://wiki.vuze.com/w/Legal_torrent_sites" target="_blank" rel="external">Vuze - Legal Torrents</a></p>
+<p>🍺 <a href="http://patorjk.com/software/taag/#p=testall&amp;f=Larry%203D&amp;t=CS%206580%20Final%20Demo" target="_blank" rel="external">ASCII Art Generator</a></p>
 <p>​</p>
 ]]></content>
     
@@ -258,24 +222,30 @@ When multiple machines all are sharing the same torrent file, this is known as a
     
     </summary>
     
-      <category term="程序媛💁‍技术贴" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/"/>
+      <category term="en 🇺🇸" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/"/>
     
-      <category term="en 🇺🇸" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/"/>
+      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/"/>
     
-      <category term="school🎓" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/"/>
+      <category term="distributed systems" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/distributed-systems/"/>
     
-      <category term="theory" scheme="https://luyao-wang.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%AA%9B%F0%9F%92%81%E2%80%8D%E6%8A%80%E6%9C%AF%E8%B4%B4/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/theory/"/>
+      <category term="torrent" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/distributed-systems/torrent/"/>
     
+      <category term="file system" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/distributed-systems/torrent/file-system/"/>
+    
+      <category term="peer to peer" scheme="https://luyao-wang.github.io/categories/en-%F0%9F%87%BA%F0%9F%87%B8/school%F0%9F%8E%93/distributed-systems/torrent/file-system/peer-to-peer/"/>
+    
+    
+      <category term="distributed systems" scheme="https://luyao-wang.github.io/tags/distributed-systems/"/>
+    
+      <category term="en 🇺🇸" scheme="https://luyao-wang.github.io/tags/en-%F0%9F%87%BA%F0%9F%87%B8/"/>
+    
+      <category term="school🎓" scheme="https://luyao-wang.github.io/tags/school%F0%9F%8E%93/"/>
     
       <category term="torrent" scheme="https://luyao-wang.github.io/tags/torrent/"/>
     
-      <category term="torrenting" scheme="https://luyao-wang.github.io/tags/torrenting/"/>
+      <category term="file system" scheme="https://luyao-wang.github.io/tags/file-system/"/>
     
-      <category term="torrent client" scheme="https://luyao-wang.github.io/tags/torrent-client/"/>
-    
-      <category term="BitTorrent" scheme="https://luyao-wang.github.io/tags/BitTorrent/"/>
-    
-      <category term="Tracker" scheme="https://luyao-wang.github.io/tags/Tracker/"/>
+      <category term="peer to peer" scheme="https://luyao-wang.github.io/tags/peer-to-peer/"/>
     
   </entry>
   
