@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
+    
+    <lastmod>2017-09-21T21:10:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/about/index.html</loc>
+    
+    <lastmod>2017-09-20T22:07:59.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/contact/index.html</loc>
+    
+    <lastmod>2017-09-20T22:07:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/</loc>
     
     <lastmod>2017-08-24T22:37:15.000Z</lastmod>
@@ -16,13 +37,6 @@
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/about/index.html</loc>
-    
-    <lastmod>2017-08-24T22:20:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://luyao-wang.github.io/2017/08/15/hello-world/</loc>
     
     <lastmod>2017-08-24T08:35:01.000Z</lastmod>
@@ -30,23 +44,9 @@
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
-    
-    <lastmod>2017-08-18T09:43:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://luyao-wang.github.io/search/index.html</loc>
     
     <lastmod>2017-08-18T09:38:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://luyao-wang.github.io/contact/index.html</loc>
-    
-    <lastmod>2017-08-18T02:47:51.000Z</lastmod>
     
   </url>
   
