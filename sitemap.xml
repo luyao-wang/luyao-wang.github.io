@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
-    
-    <lastmod>2017-09-21T21:10:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://luyao-wang.github.io/about/index.html</loc>
     
-    <lastmod>2017-09-20T22:07:59.000Z</lastmod>
+    <lastmod>2017-09-22T00:05:14.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://luyao-wang.github.io/contact/index.html</loc>
     
-    <lastmod>2017-09-20T22:07:46.000Z</lastmod>
+    <lastmod>2017-09-22T00:00:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
+    
+    <lastmod>2017-09-21T21:10:34.000Z</lastmod>
     
   </url>
   

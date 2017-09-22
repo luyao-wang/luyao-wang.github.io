@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Brainstain</title>
-  <subtitle>Stain Your Brain</subtitle>
+  <title>Luyao &quot;Lulu&quot; Wang</title>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luyao-wang.github.io/"/>
@@ -9,7 +9,7 @@
   <id>https://luyao-wang.github.io/</id>
   
   <author>
-    <name>Luyao &quot;Lulu&quot; Wang &amp; John L. Bernstein IV</name>
+    <name>Luyao &quot;Lulu&quot; Wang</name>
     
   </author>
   
