@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://luyao-wang.github.io/2017/09/26/brief-introduction/</loc>
+    
+    <lastmod>2017-09-26T22:12:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
+    
+    <lastmod>2017-09-26T22:10:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://luyao-wang.github.io/about/index.html</loc>
     
     <lastmod>2017-09-26T02:04:25.000Z</lastmod>
@@ -9,14 +23,7 @@
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/cs3240/index.html</loc>
-    
-    <lastmod>2017-09-25T22:00:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://luyao-wang.github.io/2017/08/15/hello-world/</loc>
+    <loc>https://luyao-wang.github.io/tmp/hello-world.html</loc>
     
     <lastmod>2017-09-25T09:31:00.000Z</lastmod>
     
@@ -30,14 +37,14 @@
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/2017/08/23/hadoop-big-data-best-friend/</loc>
+    <loc>https://luyao-wang.github.io/tmp/hadoop-big-data-best-friend.html</loc>
     
     <lastmod>2017-08-24T22:37:15.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://luyao-wang.github.io/2017/08/23/introduction-to-torrenting-and-torrent-clients%E2%80%8B/</loc>
+    <loc>https://luyao-wang.github.io/tmp/introduction-to-torrenting-and-torrent-clients%E2%80%8B.html</loc>
     
     <lastmod>2017-08-24T22:24:23.000Z</lastmod>
     
