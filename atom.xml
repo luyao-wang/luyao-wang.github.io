@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luyao-wang.github.io/"/>
-  <updated>2017-09-26T22:12:17.000Z</updated>
+  <updated>2017-09-27T00:52:55.000Z</updated>
   <id>https://luyao-wang.github.io/</id>
   
   <author>
@@ -16,11 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Brief Introduction</title>
+    <title>C++ Basics, Pointers, and Linked Lists - Wed Sep 27 @ 6 - 7 PM</title>
+    <link href="https://luyao-wang.github.io/2017/09/26/cpp-basics-pointers-linked-lists/"/>
+    <id>https://luyao-wang.github.io/2017/09/26/cpp-basics-pointers-linked-lists/</id>
+    <published>2017-09-27T00:38:26.000Z</published>
+    <updated>2017-09-27T00:52:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Handout-for-Wed-Sep-27-6-7-PM-Discussion-Session"><a href="#Handout-for-Wed-Sep-27-6-7-PM-Discussion-Session" class="headerlink" title="Handout for Wed Sep 27, 6 - 7 PM Discussion Session :"></a>Handout for Wed Sep 27, 6 - 7 PM Discussion Session :</h3><p><a href="http://cslibrary.stanford.edu/105/LinkedListProblems.pdf" target="_blank" rel="external">CSLibrary @ Stanford.edu - Linked List Problems</a></p>
+<h3 id="Problem-1-DeleteList"><a href="#Problem-1-DeleteList" class="headerlink" title="Problem 1 : DeleteList()"></a>Problem 1 : <code>DeleteList()</code></h3><p>Solution : Page 21 of the PDF.</p>
+<h3 id="Problem-2-Remove-Duplicates-from-Sorted-List"><a href="#Problem-2-Remove-Duplicates-from-Sorted-List" class="headerlink" title="Problem 2 : Remove Duplicates from Sorted List"></a><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/" target="_blank" rel="external">Problem 2 : <code>Remove Duplicates from Sorted List</code></a></h3><p><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/solution/" target="_blank" rel="external">Solution</a></p>
+<h3 id="Problem-3-Linked-List-Cycle"><a href="#Problem-3-Linked-List-Cycle" class="headerlink" title="Problem 3 : Linked List Cycle"></a><a href="https://leetcode.com/problems/linked-list-cycle/description/" target="_blank" rel="external">Problem 3 : <code>Linked List Cycle</code></a></h3><p><a href="https://leetcode.com/problems/linked-list-cycle/solution/" target="_blank" rel="external">Solution</a></p>
+<h3 id="Problem-4-Remove-Nth-Node-From-End-of-List"><a href="#Problem-4-Remove-Nth-Node-From-End-of-List" class="headerlink" title="Problem 4 : Remove Nth Node From End of List"></a><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/" target="_blank" rel="external">Problem 4 : <code>Remove Nth Node From End of List</code></a></h3><p><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/" target="_blank" rel="external">Solution</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Handout-for-Wed-Sep-27-6-7-PM-Discussion-Session&quot;&gt;&lt;a href=&quot;#Handout-for-Wed-Sep-27-6-7-PM-Discussion-Session&quot; class=&quot;headerlink&quot; tit
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Brief Introduction - Thu Sep 21</title>
     <link href="https://luyao-wang.github.io/2017/09/26/brief-introduction/"/>
     <id>https://luyao-wang.github.io/2017/09/26/brief-introduction/</id>
     <published>2017-09-26T22:05:25.000Z</published>
-    <updated>2017-09-26T22:12:17.000Z</updated>
+    <updated>2017-09-27T00:52:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>Hi I’m <code>Looloo</code>. I’ll be your supplemental Instruction (SI) Leader for this quarter. I am a proud member of this great organization called SCAA <a href="http://scaa.csueastbay.edu/" target="_blank" rel="external">(Student Center for Academic Achievement)</a>.</p>
 <p>I took CS 3560 Introduction to Systems Programming with Professor Stalica Summer 2017 quarter. Professor Stalica is extremely awesome, super chill and helpful. I really look forward to work with him to help you learn and succeed in this course.</p>
